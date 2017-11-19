@@ -1,0 +1,82 @@
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+    <div class="title-bar-title">Menu</div>
+</div>
+<div data-sticky-container>
+    <div class="top-bar sticky" data-sticky data-options="marginTop:0;">
+        <div class="top-bar-left">
+            <img class="brand-logo" src="assets/img/logo.png" alt="brand-logo">
+        </div>
+        <div class="top-bar-right" >
+            <ul class="menu">
+                <li class="menu-text">Follow Us on -</li>
+                <li><a href="#"><i class="fi-social-twitter"></i></a></li>
+                <li><a href="#"><i class="fi-social-facebook"></i></a></li>
+                <li><a href="#"><i class="fi-social-medium"></i></a></li>
+                <li><a href="#"><i class="fi-social-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="side-bar">
+        {{>sticky-side-menu}}
+    </div>
+    <div class="section-container">
+        <div class="sections">
+            <section class="section-wrapper" id="home" data-magellan-target="home">
+                {{>section-home}}
+            </section>
+            <section id="services" class="section-wrapper" data-magellan-target="services">
+                {{>section-services}}
+            </section>
+            <section id="whitepaper" class="section-wrapper" data-magellan-target="whitepaper">Third Section</section>
+            <section id="team" class="section-wrapper" data-magellan-target="team">
+                {{>section-teams}}
+            </section>
+            <section id="blog" class="section-wrapper" data-magellan-target="blog">
+                {{>section-blogs}}
+            </section>
+            <section id="contact" class="section-wrapper" data-magellan-target="contact">
+                {{>section-contact}}
+            </section>
+        </div>
+    </div>
+</div>
+<div class="scroll-indicator">
+    Scroll Down ->
+</div>
+<!--
+<div>
+    <div class="grid-x">
+        <div class="small-1 medium-2 cell fixed-width-sidebar">
+            {{>sticky-side-menu}}
+        </div>
+        <div class="medium-8 cell medium-offset-1">
+            <div class="sections">
+                <section class="section-wrapper" id="home" data-magellan-target="home">
+                    {{>section-home}}
+                </section>
+                <section id="services" class="section-wrapper" data-magellan-target="services">
+                    {{>section-services}}
+                </section>
+                <section id="whitepaper" data-magellan-target="whitepaper">Third Section</section>
+                <section id="team" data-magellan-target="team">
+                    {{>section-teams}}
+                </section>
+                <section id="blog" data-magellan-target="blog">
+                    {{>section-blogs}}
+                </section>
+                <section id="contact" data-magellan-target="contact">
+                    {{>section-contact}}
+                </section>
+            </div>
+        </div>
+        <div class="medium-1 cell">
+            <div class="scroll-indicator">
+                Scroll Down ->
+            </div>
+        </div>
+    </div>
+</div>-->

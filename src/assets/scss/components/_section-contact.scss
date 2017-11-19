@@ -1,0 +1,38 @@
+.contact-container {
+  display:flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  //align-content: flex-start;
+  width: 100%;
+  max-height: 800px;
+}
+
+.contact-form {
+  flex: 1 1 60%;
+  max-width: 60%;
+
+  .checkbox-container {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .special-checkbox {
+    //display: flex;
+    //justify-content: center;
+    display: inline-block;
+    background-color: #4C009E;
+    padding: 10px 6px 2px 12px;
+  }
+
+  input, textarea {
+    background-color: transparent;
+    border: 1px solid $text-secondary-color;
+  }
+}
+
+.contact-us {
+  margin-left: 6px;
+  flex: 1 1 30%;
+  max-width: 30%;
+}

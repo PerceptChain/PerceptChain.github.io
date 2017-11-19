@@ -1,0 +1,105 @@
+@import "../settings";
+
+.home-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  height: 100%;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.company {
+
+}
+
+.btn-services {
+  margin-top: 3%;
+  position: relative;
+  width: 10em;
+  background-color: #6000FF;
+  box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+  border: none;
+  &:before {
+    content: ' ';
+    position: absolute;
+    border: $button-border-width solid $button-border-color;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+  }
+  &:before {
+    border-right: 0;
+    left: 0;
+  }
+  &:after {
+    border-left: 0;
+    right: 0;
+  }
+  &:before {
+    border-top: 0;
+    left: 0;
+  }
+}
+
+.border-top-half {
+  &:after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 80%;
+    left: 0;
+    top: 0%;
+    border-top: $button-border-width solid $button-border-color;
+  }
+}
+
+.works {
+  margin: .5em 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 260px;
+
+  li:before {
+    content: '\00a0\00a0\2022\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+    color:#999;
+    font-size:11px;
+  }
+
+  li:first-child:before {
+    content: '';
+  }
+
+  &__items {
+    flex: 0 0;
+  }
+}
+
+.reach-us {
+  //margin: 8em 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+
+  &__items {
+    margin-top: 4em;
+    max-width: 200px;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+
+  }
+
+  &__first-line, .reach-us__second-line  {
+    color: $text-secondary-color;
+    strong {
+      color : #BFA4E3
+    }
+  }
+}

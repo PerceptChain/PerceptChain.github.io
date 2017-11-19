@@ -1,0 +1,39 @@
+.blog {
+  display: flex;
+  flex-flow: column;
+  padding: 0rem 4rem;
+  width: 100%;
+  height: 400px;
+  &__content {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  &-text {
+    color: $text-secondary-color;
+  }
+
+  &__text-part {
+    max-width: 60%;
+  }
+
+  &__image-part {
+
+  }
+
+  &__footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+
+.orbit-container {
+  height: 100%;
+}
+
+.orbit-slide {
+  max-height: 100%;
+}

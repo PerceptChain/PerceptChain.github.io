@@ -1,0 +1,32 @@
+/*.menu-container {
+    position: fixed;
+    z-index: 99;
+    top : 10%;
+    left: 10%;
+}*/
+
+.app-sidebar {
+    position: fixed;
+    margin-top: -10vh;
+    height: 110vh;
+    width: 240px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fixed-width-sidebar {
+    width: 200px !important;
+}
+
+.side-menu {
+    position: fixed;
+    z-index: 99;
+    padding-top: 10%;
+    left: 110px;
+}
+.menu-item {
+    display: flex;
+
+    &__label {
+        padding-right: 40px;
+    }
+}
